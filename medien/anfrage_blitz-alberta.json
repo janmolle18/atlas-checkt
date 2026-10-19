@@ -1,104 +1,14 @@
 {
  "slug": "blitz-alberta",
- "max_mb": 150,
+ "max_mb": 250,
  "suchen": [
   {
-   "q": "Moraine Lake Banff National Park",
+   "q": "Flag of Alberta",
    "n": 2,
    "typ": "bild"
   },
   {
-   "q": "Banff National Park mountains",
-   "n": 2,
-   "typ": "bild"
-  },
-  {
-   "q": "Flag of Alberta flying",
-   "n": 2,
-   "typ": "bild"
-  },
-  {
-   "q": "Alberta flag pole",
-   "n": 2,
-   "typ": "bild"
-  },
-  {
-   "q": "Alberta Legislature Building",
-   "n": 2,
-   "typ": "bild"
-  },
-  {
-   "q": "Alberta Legislature Edmonton",
-   "n": 2,
-   "typ": "bild"
-  },
-  {
-   "q": "Calgary skyline",
-   "n": 2,
-   "typ": "bild"
-  },
-  {
-   "q": "Downtown Calgary skyline",
-   "n": 2,
-   "typ": "bild"
-  },
-  {
-   "q": "Danielle Smith 2023",
-   "n": 2,
-   "typ": "bild"
-  },
-  {
-   "q": "Danielle Smith Premier of Alberta",
-   "n": 2,
-   "typ": "bild"
-  },
-  {
-   "q": "Elections Canada polling station",
-   "n": 2,
-   "typ": "bild"
-  },
-  {
-   "q": "Canada ballot box",
-   "n": 2,
-   "typ": "bild"
-  },
-  {
-   "q": "Athabasca oil sands mine",
-   "n": 2,
-   "typ": "bild"
-  },
-  {
-   "q": "Syncrude Mildred Lake",
-   "n": 2,
-   "typ": "bild"
-  },
-  {
-   "q": "pumpjack Alberta",
-   "n": 2,
-   "typ": "bild"
-  },
-  {
-   "q": "oil pumpjack Alberta prairie",
-   "n": 2,
-   "typ": "bild"
-  },
-  {
-   "q": "Parliament Hill Ottawa",
-   "n": 2,
-   "typ": "bild"
-  },
-  {
-   "q": "Centre Block Parliament Hill",
-   "n": 2,
-   "typ": "bild"
-  },
-  {
-   "q": "Trans Mountain pipeline construction",
-   "n": 2,
-   "typ": "bild"
-  },
-  {
-   "q": "pipeline construction Alberta",
+   "q": "Alberta provincial flag",
    "n": 2,
    "typ": "bild"
   },
@@ -108,17 +18,17 @@
    "typ": "bild"
   },
   {
-   "q": "Calgary Court of Queen's Bench",
+   "q": "Court of King's Bench Alberta courthouse",
    "n": 2,
    "typ": "bild"
   },
   {
-   "q": "Peace Tower flag Ottawa",
+   "q": "Peace Tower Ottawa",
    "n": 2,
    "typ": "bild"
   },
   {
-   "q": "Canadian flag Peace Tower",
+   "q": "Peace Tower flag",
    "n": 2,
    "typ": "bild"
   },
@@ -128,7 +38,7 @@
    "typ": "bild"
   },
   {
-   "q": "Edmonton downtown skyline river valley",
+   "q": "Edmonton river valley downtown",
    "n": 2,
    "typ": "bild"
   }
