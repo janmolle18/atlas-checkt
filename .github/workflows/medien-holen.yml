@@ -1,0 +1,26 @@
+name: Medien holen
+# Lädt frei lizenzierte Bilder/Videos von Wikimedia Commons, weil die Cloud-Umgebung Commons nicht erreicht.
+# Freigegeben von jan (19.10.2026, Entscheidungskarte): öffentliches Repo, weil Actions im privaten Repo blockiert sind. Nur frei lizenzierte Commons-Dateien, keine Schlüssel.
+on:
+  push:
+    branches: ['medien-blitz-alberta']
+    paths: ['medien/anfrage_blitz-alberta.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  holen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Herunterladen
+        run: |
+          python3 medien/holen.py medien/anfrage_blitz-alberta.json
+      - name: Zurückschreiben
+        run: |
+          git config user.name "medien-holen"
+          git config user.email "actions@users.noreply.github.com"
+          git add medien
+          git diff --cached --quiet && exit 0
+          git commit -m "medien: Commons-Material geladen [skip ci]"
+          git push
