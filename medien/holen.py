@@ -16,7 +16,8 @@ UA = {'User-Agent': 'atlas-checkt-medien/1.0 (github.com/janmolle18/insta-news-a
 FREI = re.compile(r'^(public domain|pd|cc0|cc[- ]by(-sa)?([- ]\d\.\d)?|cc[- ]by(-sa)?[- ][\d.]+.*|attribution|no restrictions)', re.I)
 
 
-def get(url, tries=4):
+def get(url, tries=7):
+    # Commons drosselt (HTTP 429): Retry-After beachten, sonst lange warten
     for i in range(tries):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
@@ -24,11 +25,16 @@ def get(url, tries=4):
         except Exception as e:  # noqa: BLE001
             if i == tries - 1:
                 raise
-            time.sleep(2 ** i)
+            warte = 2 ** i
+            if getattr(e, 'code', None) == 429:
+                ra = (getattr(e, 'headers', None) or {}).get('Retry-After')
+                warte = int(ra) if ra and ra.isdigit() else 20 * (i + 1)
+            print('  warte', warte, 's', getattr(e, 'code', e))
+            time.sleep(warte)
 
 
 def api(**p):
-    p.update(format='json', action='query', prop='imageinfo', iiprop='url|extmetadata|size|mime', iiurlwidth=2160)
+    p.update(format='json', action='query', prop='imageinfo', iiprop='url|extmetadata|size|mime', iiurlwidth=1920)
     return json.loads(get(API + '?' + urllib.parse.urlencode(p)))
 
 
@@ -98,7 +104,7 @@ def main(pfad):
                           'breite': ii.get('width'), 'hoehe': ii.get('height'), 'mime': ii.get('mime'), 'suchbegriff': s['q']})
             have.add(p['title']); got += 1
             print('  OK', datei, lic)
-            time.sleep(0.5)
+            time.sleep(2)
     json.dump(liste, open(lp, 'w'), ensure_ascii=False, indent=1)
     print(slug, len(liste), 'Dateien')
 
