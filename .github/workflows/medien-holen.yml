@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Herunterladen
         run: |
-          python3 medien/holen.py medien/anfrage_elon-musk.json
+          python3 -u medien/holen.py medien/anfrage_elon-musk.json 2>&1 | tee medien/protokoll_elon-musk.txt
       - name: Zurückschreiben
         run: |
           git config user.name "medien-holen"
