@@ -1,0 +1,77 @@
+{
+ "slug": "nachrichten-check",
+ "max_mb": 150,
+ "suchen": [
+  {
+   "q": "Massachusetts Institute of Technology Great Dome",
+   "n": 2,
+   "typ": "bild"
+  },
+  {
+   "q": "Twitter headquarters San Francisco",
+   "n": 1,
+   "typ": "bild"
+  },
+  {
+   "q": "press conference lectern microphones",
+   "n": 2,
+   "typ": "bild"
+  },
+  {
+   "q": "Suwałki Gap",
+   "n": 2,
+   "typ": "bild"
+  },
+  {
+   "q": "Poland Lithuania border",
+   "n": 2,
+   "typ": "bild"
+  },
+  {
+   "q": "Nord Stream Lubmin",
+   "n": 2,
+   "typ": "bild"
+  },
+  {
+   "q": "gas compressor station Germany",
+   "n": 1,
+   "typ": "bild"
+  },
+  {
+   "q": "Ever Given Suez Canal",
+   "n": 3,
+   "typ": "bild"
+  },
+  {
+   "q": "Suez Canal container ship",
+   "n": 1,
+   "typ": "bild"
+  },
+  {
+   "q": "stack of newspapers",
+   "n": 2,
+   "typ": "bild"
+  },
+  {
+   "q": "smartphone in hand",
+   "n": 2,
+   "typ": "bild"
+  },
+  {
+   "q": "magnifying glass newspaper",
+   "n": 1,
+   "typ": "bild"
+  },
+  {
+   "q": "running shoes",
+   "n": 1,
+   "typ": "bild"
+  },
+  {
+   "q": "gas pipeline Germany",
+   "n": 1,
+   "typ": "bild"
+  }
+ ],
+ "dateien": []
+}
