@@ -1,0 +1,17 @@
+{
+ "slug": "starlink-ukraine",
+ "max_mb": 120,
+ "suchen": [
+  {"q": "Starlink satellites train night sky", "n": 2, "typ": "bild"},
+  {"q": "Starlink satellites stacked deployment", "n": 2, "typ": "bild"},
+  {"q": "Starlink terminal Ukraine", "n": 3, "typ": "bild"},
+  {"q": "Starlink dish antenna", "n": 2, "typ": "bild"},
+  {"q": "Ukrainian army drone operator", "n": 2, "typ": "bild"},
+  {"q": "Pete Hegseth official portrait", "n": 2, "typ": "bild"},
+  {"q": "Marco Rubio official portrait Secretary of State", "n": 2, "typ": "bild"},
+  {"q": "Berlaymont building European Commission", "n": 2, "typ": "bild"},
+  {"q": "Volodymyr Zelensky 2025", "n": 2, "typ": "bild"},
+  {"q": "The Pentagon aerial view", "n": 1, "typ": "bild"}
+ ],
+ "dateien": []
+}
